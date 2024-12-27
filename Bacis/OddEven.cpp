@@ -1,6 +1,6 @@
-#include<iostream>
+        #include<iostream>
 using namespace std;
-int main(){
+
     int dectobinary(int num){
         int ans=0; pow=1;
         while(dec>0){
@@ -15,7 +15,6 @@ int main(){
     }
     int main(){
         int decnum=50;
-        cout<<dec to binary(decnum)<<endl;
+        cout<<dectobinary(decnum)<<endl;
         return 0;
     }
-}
