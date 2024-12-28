@@ -9,17 +9,10 @@ int main(){
         for(int j=0;j<=0;j++){
             cout<<"*";
         }
-      
-            // for(int j=n-1;j<=n-1;j++){
-            //     cout<<" ";
-            // }
-            // if(i!=1){
-            //     for(int j=0;j<=n-1;j++){
-            //         cout<<"*"<<" ";
-            //     }
-            // }
-        
+           
+   
         cout<<endl;
-    }
-    return 0;
+     }
+           
+     return 0;   
 }
