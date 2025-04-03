@@ -3,9 +3,9 @@ using namespace std;
 int main(){
     int a,b;
     cin >>a >>b;
-    int ans=1;
+    int ans=1;5
     for(int i=1;i<=b;i++){
-        ans = ans *a;
+        ans = ans * a;
     }
-    cout<<"Value of b pow of a"<<a<<endl;
+    cout<<ans<<endl;
 }
