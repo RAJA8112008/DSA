@@ -2,26 +2,10 @@
 using namespace std;
 int main(){
     int a,b;
-    cout<<"Enter the value of a"<<endl;5
-    cin>>a;
-
-    cout<<"Enter the value of b"<<endl;
-    cin>>b;
-
-    char op;
-    cout<<"Enter the operator value"<<endl;
-    cin>>op;
-    switch(op){
-        case'+':cout<<(a+b)<<endl;
-        break;
-        case'-':cout<<(a-b)<<endl;
-          break;
-          case'*':cout<<(a*b)<<endl;
-          break;
-          case'/':cout<<(a/b)<<endl;
-          break;
-          case'%':cout<<(a%b)<<endl;
-          break;
-          default:cout<<"Enter the correct operator"<<endl;
+    cin >>a >>b;
+    int ans=1;
+    for(int i=1;i<=b;i++){
+        ans = ans *a;
     }
+    cout<<"Value of b pow of a"<<a<<endl;
 }
