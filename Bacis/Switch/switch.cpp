@@ -22,7 +22,6 @@ int main(){
           break;
           case'%':cout<<(a%b)<<endl;
           break;
-           
           default:cout<<"Enter the correct operator"<<endl;
     }
 }
