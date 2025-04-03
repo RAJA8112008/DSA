@@ -1,19 +1,28 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int num=5;
-    switch(num){
-        case 2:cout<<"raja"<<endl;
+    int a,b;
+    cout<<"Enter the value of a"<<endl;
+    cin>>a;
 
-        case 5:cout<<"kumar"<<endl; 
-        break;
-        case 3:cout<<"saniya"<<endl;
-        break;
-        case 4:cout<<"raja2"<<endl;
-        break;
-        default:cout<<"Prajapati"<<endl;
+    cout<<"Enter the value of b"<<endl;
+    cin>>b;
 
-
+    char op;
+    cout<<"Enter the operator value"<<endl;
+    cin>>op;
+    switch(op){
+        case'+':cout<<(a+b)<<endl;
+        break;
+        case'-':cout<<(a-b)<<endl;
+          break;
+          case'*':cout<<(a*b)<<endl;
+          break;
+          case'/':cout<<(a/b)<<endl;
+          break;
+          case'%':cout<<(a%b)<<endl;
+          break;
+           
+          default:cout<<"Enter the correct operator"<<endl;
     }
-    
 }
