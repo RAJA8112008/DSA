@@ -17,4 +17,4 @@ int main(){
     int n,r;
     cin>>n>>r;
 cout<<"value of ncr:"<<ncr(n,r)<<endl;
-}
+} 
