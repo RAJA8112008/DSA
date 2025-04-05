@@ -1,22 +1,23 @@
 #include<iostream>
 using namespace std;
-bool isEven(int a){
-  if(a&1){
-    return 0;
-  } 
-  else{
-    return 1;
-  }
+  
+int factorial(int n){
+    int factorial=1;
+    for(int i=1;i<=n;i++){
+        factorial=factorial*i;
+    }
+        return factorial;
 }
+    int ncr(int n,int r){
+        int num= factorial(n);
+        int demunet=factorial(r)*factorial(n-r);
+        int ans=num/demunet;
+        return ans;
+    }
 
 
 int main(){
-    int num;
-    cin>>num;
-   bool isEven(num)
-    cout<<"num is even"<<a<<endl;
-   
-    cout<<"num is odd"<<a<<endl;
-   }
-    
+int n,r;
+cin>>n>>r;
+ cout<<"Factorial of num:"<<ncr(n,r)<<endl;
 }
