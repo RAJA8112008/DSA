@@ -16,5 +16,5 @@ int ncr(int n,int r){
 int main(){
     int n,r;
     cin>>n>>r;
-cout<<"value of ncr:"<<ncr()<<endl;
+cout<<"value of ncr:"<<ncr(n,r)<<endl;
 }
