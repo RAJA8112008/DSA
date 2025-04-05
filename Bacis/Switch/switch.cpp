@@ -8,4 +8,6 @@ void printcounting(int n){
 int main(){
 int n;
 cin>>n;
+
+printcounting(n);
 }
