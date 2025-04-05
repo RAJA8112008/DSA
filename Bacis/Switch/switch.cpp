@@ -15,4 +15,5 @@ int power(){
 int main(){
 
 cout<<"value of a" <<power()<<endl;
+return 0;
 }
