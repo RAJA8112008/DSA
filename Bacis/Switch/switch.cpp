@@ -1,11 +1,18 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int a,b; 
-    cin >> a >>b;
+
+
+
+int power(){
+    int a,b;
+    cin>>a>>b;
     int ans=1;
     for(int i=1;i<=b;i++){
-        ans= ans * a;
+        ans= ans *a;
     }
-    cout<<"answer of a"<< " "<< ans <<endl;
+    return ans;
+}
+int main(){
+
+cout<<"value of a" <<power()<<endl;
 }
