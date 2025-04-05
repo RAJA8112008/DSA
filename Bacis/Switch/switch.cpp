@@ -5,7 +5,7 @@ int main(){
     cin >> a >>b;
     int ans=1;
     for(int i=1;i<=b;i++){
-        ans=ans*a;
+        ans= ans * a;
     }
-    cout<<"answer of a"<<ans <<endl;
+    cout<<"answer of a"<< " "<< ans <<endl;
 }
