@@ -10,11 +10,11 @@ int factorial(int n){
 int ncr(int n,int r){
     int num=factorial(n);
     int demuneter=factorial(r)*factorial(n-r);
-    int ncr=num/demuneter;
-    return ncr;
+    int ans=num/demuneter;
+    return ans;
 }
 int main(){
     int n,r;
     cin>>n>>r;
-cout<<"value of ncr:"<<ncr(n,r)<<endl;
+cout<<"value of ncr:"<<ncr<<endl;
 }
