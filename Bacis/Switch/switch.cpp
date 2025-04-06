@@ -1,21 +1,12 @@
 #include<iostream>
 using namespace std;
-int factorial(int n){
-    int factorial=1;
+void printcounting(int n){
     for(int i=1;i<=n;i++){
-        factorial=factorial*i;
+   cout<<i<<endl;
     }
-    return factorial;
 }
-    int ncr(int n,int r){
-        int num=factorial(n);
-        int demu=factorial(r)*factorial(n-r);
-        int ans=num/demu;
-        return ans;
-    }
-    
 int main(){
-    int n,r;
-    cin>>n>>r;
-    cout<<"value of ncr:"<<ncr(n,r)<<endl;
+    int num;
+    cin>>num; 
+    printcounting;
 }
