@@ -1,22 +1,24 @@
 #include<iostream>
 using namespace std;
-bool isprime(int n){
-    for(int i=2;i<=n;i++){
-        if(n&i==1){
-            
-            return 1;
-        }
 
+int totalsum(int sumnum[],int n){
+    int ans=0;
+    for(int i=0;i<n;i++){
+        
+         
+        ans= ans+sumnum[i];
     }
-    return 0;
+    
+   return ans;
 }
 
 
 int main(){
-    int n;
-    cin>>n;
-    if(isprime(n)){
-        cout<<"prime"<<endl;
-    }
-    cout<<"not prime"<<endl;
+    
+    int sumnum[5]={1,2,3,4,5};
+   int result= totalsum(sumnum,5);
+
+cout<<result<<endl;
+return 0;
+
 }
