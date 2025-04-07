@@ -5,7 +5,8 @@ bool isprime(int n){
         if(n&i==1){
             return 1;
         } 
-    }
+    }  
+    
     return 0;
 } 
 int main(){
