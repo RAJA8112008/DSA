@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 bool isprime(int n){
-    for(int i=1;i<=n;i++){
+    for(int i=2;i<=n;i++){
         if(n&i==1){
             
             return 1;
