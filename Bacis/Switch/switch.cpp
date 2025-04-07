@@ -6,7 +6,7 @@ bool search( int arr[],int size,int n){
     if(arr[i]==n){
         return 1;
     }
-}
+} 
     return 0;
 
 }
