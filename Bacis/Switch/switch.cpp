@@ -8,7 +8,6 @@ int totalsum(int arr[],int n){
     }
     return sum;
 }
-
 int main(){
     int n;
     cin>>n;
