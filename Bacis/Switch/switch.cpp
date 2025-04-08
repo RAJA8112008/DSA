@@ -1,27 +1,28 @@
 #include<iostream>
 using namespace std;
   
-bool search( int arr[],int size,int n){
-    for(int i=0;i<size;i++){
-    if(arr[i]==n){
-        return 1;
+int swaparr(int arr[],int n){
+int start = 0;
+int end = n-1;
+while(start < end){
+    swap(arr[start],arr[end]);
+        start ++;
+        end--;
     }
-} 
-    return 0;
-
 }
 
 
-int main(){
-    int n;
-    cin>>n;
-    int arr[5]={1,2,3,4,5};
-     
-   if(search( arr,5,n)){
-    cout<<"value exist"<<endl;
-   }else{
+void printarr(int arr[],int n){
+for( int i=0;i<n;i++){
+cout<<arr[i]<<" ";
+}
+cout<<endl;
+}
 
-cout<<"value not essist"<<endl;
-   }
-return 0;
+int main(){
+    int arr[5]={2,5,6,8,7};
+    
+    swaparr(arr,5);
+    printarr(arr,5);
+    return 0;
 }
