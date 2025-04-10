@@ -3,9 +3,9 @@ using namespace std;
 int solve(int arr[],int size,int key){
 	int start =0;
 	int end= size-1; 
-	int mid =(start+end)/2;
+	// int mid =(start+end)/2;
 	while(start<=end){
-		
+		int mid =(start+end)/2;
 		if(arr[mid]<key){
 			int start =mid+1;
 		}
@@ -15,7 +15,7 @@ int solve(int arr[],int size,int key){
 		else{
 			return mid;
 		}
-		int mid =(start+end)/2;
+		
 	}
 	return -1;
 }
