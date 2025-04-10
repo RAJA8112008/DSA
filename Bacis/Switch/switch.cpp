@@ -21,10 +21,8 @@ int solve(int arr[],int size,int key){
 }
 int main(){
 int evenarr[5]={2,4,6,8,10};
- int result=solve(evenarr,5,10);
+ int result=solve(evenarr,5,3);
  cout<<"Key value"<<result<<endl;
-
  
  return 0;
-
 }
