@@ -1,28 +1,18 @@
-#include<iostream>
-using namespace std;
+#include <bits/stdc++.h> 
+vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
+{
+	vector<int>ans;
+	for(int i=0;i<n;i++){
 
-void swaparr(int arr[],int n){
-    int start=0;
-    int end=n-1;
-    while(start<=end){
-    swap(arr[start],arr[end]);
-    start++;
-    end--;
-}
-}
+	int element=arr1[i];
 
-void printarr(int arr[],int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
-
-
-int main(){
-    int arr[6]={4,5,6,2,8,3};
-    printarr( arr,6);
-    swaparr(arr,6);
-    printarr(arr,6);
-    return 0;
+		for(int j=0;i<m;j++){
+			if(element==arr2[j]){
+				ans.push_back(element);
+				arr2[j]=-15249;
+				break;
+			}
+		}
+	}
+	return ans;
 }
