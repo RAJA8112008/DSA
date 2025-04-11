@@ -20,10 +20,6 @@ while(start<=end){
 }
 return -1;
 }
-
-
-
-
 int main(){
 	int oddarr[6]={2,4,6,8,10,12};
 	 int result=  solve(oddarr,6,10);
