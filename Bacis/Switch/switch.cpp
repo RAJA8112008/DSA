@@ -28,6 +28,6 @@ int main(){
 	int Binaryarr[6]={1,2,3,4,4,5};
 	int result =firstOcurrence(Binaryarr,6,4);
 	cout<<"index of 4 "<<result<<endl; 
-	cout<<"Amit"<<endl;
+	
 	return 0;
 }
