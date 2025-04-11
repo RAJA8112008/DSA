@@ -14,6 +14,7 @@ int solve(int arr[],int size,int key){
 		}
 		else{
 			return mid;
+			
 		}
 		
 	}
