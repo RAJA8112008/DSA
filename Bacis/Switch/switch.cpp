@@ -9,6 +9,7 @@ int firstOcurrence(int arr[],int n,int key){
 		if(arr[mid]==key){
 			ans = mid;
 			end = mid-1;
+			
 		}
 		else if(key>arr[mid]){
 			start = mid+1;
@@ -26,7 +27,7 @@ int firstOcurrence(int arr[],int n,int key){
 int main(){
 	int Binaryarr[6]={1,2,3,4,4,5};
 	int result =firstOcurrence(Binaryarr,6,4);
-	cout<<"index of 4 "<<result<<endl;
+	cout<<"index of 4 "<<result<<endl; 
+	cout<<"Amit"<<endl;
 	return 0;
-
 }
