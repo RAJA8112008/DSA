@@ -7,8 +7,6 @@ int firstOcurrence(int arr[], int n, int key) {
 	while (start <= end) {
 		int mid = start + (end - start) / 2;
 		if (arr[mid] == key) {
-
-			
 			ans = mid;
 			end = mid - 1;
 		}
