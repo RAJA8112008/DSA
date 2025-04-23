@@ -1,13 +1,15 @@
 # include<stdio.h>
 int  main(){
- float a,b,c,d;
- float sum,avr;
- scanf("%f",& a);
- scanf("%f",& b);
- scanf("%f",& c);
- scanf("%f",& d);
- sum=a+b+c;
- printf("sum of numbers=%f",sum);
- avr= sum/4;
- printf("avr of numbers=%f",avr);
+ int a,b,c;
+
+ scanf("%d",&a);
+ scanf("%d",&b);
+ scanf("%d",&c);
+if(a<b && a<c){
+    printf("small number=%d",a);
+}else if(b<c){
+   printf("print b=%d",b);
+}else{
+    printf("print c=%d",c);
+}
 }
