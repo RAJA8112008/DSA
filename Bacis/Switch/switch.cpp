@@ -6,7 +6,7 @@ int  main(){
  scanf("%d",&b);
  scanf("%d",&c);
 if(a<b && a<c){
-    printf("small number=%d",a);
+    printf("small number=%",a);
 }else if(b<c){
    printf("print b=%d",b);
 }else{
