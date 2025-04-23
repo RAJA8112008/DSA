@@ -1,7 +1,14 @@
 # include<stdio.h>
 int  main(){
-    int a,b;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    printf("Sum of a and b =  %d",a+b);
+   int phy,chem,math;
+   int sum;
+   int avr;
+   scanf("%d",&phy);
+   scanf("%d",&chem);
+   scanf("%d",&math);
+   sum = phy+chem+math;
+  printf("sum of subjects=%d",sum);
+  avr=sum/3;
+  printf("average of subjects=%d",avr);
+
 }
