@@ -10,6 +10,7 @@ if(a<b && a<c){
 }else if(b<c){
    printf("print b=%d",b);
 }else{
+    
     printf("print c=%d",c);
 }
 }
