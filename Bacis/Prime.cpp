@@ -10,6 +10,7 @@ int getlength(char name[]){
 }
 
 int main(){
+    
    char name[10];
    cin>>name;
    cout<<"my name"<<name<<endl;
