@@ -39,7 +39,9 @@ bool checkPalindrome(string s) {
 
             
             end--;
-        }
+        } 
+
+        
     }
     return true;
 }
