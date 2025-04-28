@@ -12,7 +12,7 @@ bool convertor(char s) {
 // Correct: function to manually convert uppercase to lowercase
 char towler(char s) {
     if (s >= 'A' && s <= 'Z') {
-        s = s + 32; // 'A' + 32 = 'a', 'B' + 32 = 'b', etc
+        s = s + 32; 
     }
     return s;
 }
