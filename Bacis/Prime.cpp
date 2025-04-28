@@ -5,6 +5,6 @@ int main() {
     int differnace;
     scanf("%d", &a);
     scanf("%d", &b);
-    differnace = a *b;
+    differnace = a /b;
     printf("Value using operators: %d\n", differnace);
 }
