@@ -2,9 +2,9 @@
 
 int main() {
     int a, b;
-    int sum;
+    int differnace;
     scanf("%d", &a);
     scanf("%d", &b);
-    sum = a + b;
-    printf("Value using operators: %d\n", sum);
+    differnace = a - b;
+    printf("Value using operators: %d\n", differnace);
 }
