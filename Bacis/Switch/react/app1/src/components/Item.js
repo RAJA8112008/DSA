@@ -1,6 +1,7 @@
  import './Item.css'
- function Item() {
-   return (<p className="nirma">Nirma</p>);
+ function Item(props) {
+   const Item=props.name;
+   return (<p className="nirma">{Item}</p>);
  }
  
  export default Item;

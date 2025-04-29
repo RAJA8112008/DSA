@@ -1,8 +1,8 @@
 import './ItemDate.css'
-function ItemDate(){
-    const day=15;
-  const month="August";
-  const year=1947;
+function ItemDate(props){
+    const day=props.day;
+  const month=props.month;
+  const year=props.year;
     return(
         <div className='mfg-date'>
             <span>{day}</span>
