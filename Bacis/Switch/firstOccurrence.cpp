@@ -9,7 +9,7 @@ bool ramu(char a,char b){
 
 int main(){
 
-    string  monk ="rampaltau";
+    string  monk ="rampal tau";
     sort(monk.begin(),monk.end(),ramu);
     cout<<monk<<endl;
     return 0;
