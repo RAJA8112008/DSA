@@ -3,13 +3,15 @@
 #include<cctype>
 using namespace std;
 
-bool raja(char a, char b) {
-    return a <b;
+bool ramu(char a,char b){
+    return a < b;
 }
 
-int main() {
-    string s = "Rajakumar";
-    sort(s.begin(), s.end(), raja);
-    cout << s << endl;
+int main(){
+
+    string  monk ="rampaltau";
+    sort(monk.begin(),monk.end(),ramu);
+    cout<<monk<<endl;
     return 0;
+
 }
