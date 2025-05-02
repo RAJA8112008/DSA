@@ -8,7 +8,7 @@ bool raja(char a, char b) {
 }
 
 int main() {
-    string s = "babbar";
+    string s = "Rajakumar";
     sort(s.begin(), s.end(), raja);
     cout << s << endl;
     return 0;
