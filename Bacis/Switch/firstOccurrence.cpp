@@ -4,7 +4,7 @@
 using namespace std;
 
 bool raja(char a, char b) {
-    return a <b;
+    return b <a;
 }
 
 int main() {
