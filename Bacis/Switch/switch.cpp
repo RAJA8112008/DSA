@@ -1,31 +1,16 @@
 #include<stdio.h>
 int main(){
-    int day;
-    printf("value of day:");
-    scanf("%d",&day);
-    switch(day){
+    int num;
+    printf("value of num:");
+    scanf("%d",&num);
+    switch(num%2){
         case 1:
-        printf("\nMonday");
+        printf("num is odd");
         break;
         case 2:
-        printf("\nTuesday");
-        break;
-        case 3:
-        printf("\nWednesday");
-        break;
-        case 4:
-        printf("\nThursday");
-        break;
-        case 5:
-        printf("\nFriday");
-        break;
-        case 6:
-        printf("\nSaturday");
-        break;
-        case 7:
-        printf("\nSunday");
+        printf("num is even");
         break;
         default:
-        printf("\nvalue is not found");
+        printf("value is not found");
     }
 }
