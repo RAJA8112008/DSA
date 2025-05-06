@@ -1,19 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int year;
-    printf("Enter ythe value of year:");
-    scanf("%d",&year);
-    if(year%4==0){
-     printf("\n year is leep",year);
-    }
-    else if(year%100==0){
-        printf("\n year is not leep",year);
-    }
-    else if(year%400==0){
-        printf("\n year is leep",year);
-    }
-    else{
-        printf("\nyear is not leep",year);
-    }
+   int year;
+   printf("value of year:");
+   scanf("%d",&year);
+   if((year%4==0 && year%100!=0)||(year%400==0)){
+    printf("\nyear is leep:%d",year);
+   }else{
+    printf("\nyear is not leep:%d",year);
+   }
 }
