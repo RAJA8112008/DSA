@@ -11,6 +11,7 @@ int main(){
         printf("num is even");
         break;
         default:
+        
         printf("value is not found");
     }
 }
