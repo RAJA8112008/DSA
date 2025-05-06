@@ -13,4 +13,7 @@ int main()
     else if(year%400==0){
         printf("\n year is leep",year);
     }
+    else{
+        printf("\nyear is not leep",year);
+    }
 }
