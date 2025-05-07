@@ -7,6 +7,7 @@ int main() {
 
     switch (num > 0){
         case 1:
+        
         printf("num is positive");
         break;
         case 0:
