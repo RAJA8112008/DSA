@@ -12,6 +12,7 @@ int main() {
         break;
         case 0:
         switch(num<0){
+            
             case 1:
             printf("num is negative");
             break;
