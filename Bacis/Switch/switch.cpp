@@ -5,4 +5,5 @@ int main(){
     int*ch=&a;
     cout<<&a<<endl;
     cout<<*ch<<endl;
+    cout<<&ch<<endl;
 }
