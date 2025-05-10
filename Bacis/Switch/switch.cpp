@@ -1,9 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a=5;
-    int*ch=&a;
-    cout<<&a<<endl;
-    cout<<*ch<<endl;
-    cout<<&ch<<endl;
+  int arr[4]={12,25,62,88};
+  cout<<arr<<endl;
+  cout<<arr[0]<<endl;
+  cout<<&arr<<endl;
+  cout<<&arr[0]<<endl;
+  cout<<&arr[1]<<endl;
+
 }
