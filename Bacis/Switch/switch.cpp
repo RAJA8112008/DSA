@@ -10,5 +10,6 @@ int main(){
   cout<<"address of p"<<&p<<endl;
   cout<<"adress of q"<<q<<endl;
   cout<<"adress of q"<<&q<<endl;
+  
   cout<<"adress of q"<<q[0]<<endl;
 }
