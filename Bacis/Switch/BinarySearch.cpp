@@ -8,5 +8,5 @@ int main(){
         sum=sum*10+rem;
         val=num/10;
     }
-    printf("\nnum:%d",num);
+    printf("\nnum:%d",sum);
 }
