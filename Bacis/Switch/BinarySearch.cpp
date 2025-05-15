@@ -13,6 +13,7 @@ int firstOccurrence(int arr[], int n, int key) {
             end = mid - 1;  // move left for first occurrence
         } else if (key > arr[mid]) {
             start = mid + 1;
+            
         } else {
             end = mid - 1;
         }
