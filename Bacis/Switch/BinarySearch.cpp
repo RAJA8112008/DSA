@@ -2,6 +2,7 @@
 int main(){
     
     int num,original,rem,sum=0;
+    original=sum;
     printf("Enter the num:");
     scanf("%d",&num);
     while(num!=0){
@@ -9,7 +10,7 @@ int main(){
         sum=sum+rem;
         num=num/10;
     }
-     original=sum;
+     
      if(original==num){
         printf("pallindrome");
      }else{
