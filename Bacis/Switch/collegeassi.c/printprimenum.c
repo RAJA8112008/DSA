@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int isprime(int n){
     int count =0;
    for(int i=1;i<n;i++){
