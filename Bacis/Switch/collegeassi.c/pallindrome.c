@@ -3,7 +3,7 @@ int main(){
     int num,original,rem,sum=0;  //to check Pallindrome number
     printf("Enter the num:");
     scanf("%d",&num);
-     original=sum;
+    original=sum;
     while(num!=0){
         rem=num%10;
         sum=sum*10+rem;
