@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int num,rem,sum=0;
-    // int original=sum;
+    
+    int num,original,rem,sum=0;
     printf("Enter the num:");
     scanf("%d",&num);
     while(num!=0){
@@ -9,10 +9,10 @@ int main(){
         sum=sum+rem;
         num=num/10;
     }
-    printf("Reverse num :%d",sum);
-
-// if(original==num){
-//         printf("pallindrome");
-//     }
-//     printf(" not pallindrome");
+     original=sum;
+     if(original==num){
+        printf("pallindrome");
+     }else{
+        printf("not pallindrome");
+     }
 }
