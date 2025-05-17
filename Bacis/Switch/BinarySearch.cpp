@@ -10,7 +10,6 @@ int main(){
         sum=sum+rem;
         num=num/10;
     }
-     
      if(original==num){
         printf("pallindrome");
      }else{
