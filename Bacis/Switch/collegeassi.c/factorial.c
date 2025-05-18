@@ -10,7 +10,7 @@ else{
 for(i=1;i<=num;i++){
     factorial*=i;   
   }
-  printf("\nFactorial is %d:%d",num,factorial);
+  printf("\nFactorial is %d:",factorial);
 }
 return 0;
 }
