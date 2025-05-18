@@ -1,7 +1,8 @@
 #include<stdio.h>
 int isprime(int n){      // as did before (num is prime or not)
     int count =0;
-   for(int i=2;i<n;i++){     
+    if(n<2) return 0;
+   for(int i=1;i<=n;i++){     
     if(n%i==0){
         count++;
     }
@@ -17,8 +18,7 @@ int main(){
     scanf("%d",&first);
     //last num
     printf("Enter the Last num:");
-    scanf("%d",&Last);
-               // first num must be greater then one
+    scanf("%d",&Last);             
     for(int i=first;i<=Last;i++){
        if(isprime(i)){
         printf("\nPrime num is :%d",i);
