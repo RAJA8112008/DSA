@@ -7,6 +7,8 @@ int main(){
     if(num%i==0){
         count++;
     }
+
+    
   }
   if(count==2){
     printf("Num is prime:%d",num);
