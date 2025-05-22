@@ -1,12 +1,29 @@
 #include<stdio.h>
 int main(){
-    int rem,num,sum=0;
-    printf("Enter the value of num:");
-    scanf("%d",&num);
-    while(num!=0){
-        rem=num% 10;
-        sum =sum+rem;
-        num =num/10;
+    int i,j;
+    int arr[3][3];
+    int brr[3][3];
+    int crr[3][3];
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("\t%d",&arr[i][j]);
+        }
     }
-    printf(" Sum of digits of num:%d",sum);
+     for(j=0;j<3;j++){
+        for(j=0;j<3;j++){
+            scanf("\t%d",&brr[i][j]);
+        }
+    }
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            crr[i][j]=arr[i][j]+brr[i][j];
+        }
+    }
+        for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+             printf("%d",&crr[i][j]);
+        }
+       print("\n");
+    }
+   
 }
