@@ -1,10 +1,15 @@
 #include<stdio.h>
 void main(){
-    int  i,num,fact=1;
-    printf("Enter the num:");
+    int num,i;
+    unsigned long fact=1;
+    printf("Enter the name:");
     scanf("%d",&num);
-    for(i=1;i<=num;i++){
-        fact*=i;
+    if(num<0){
+        printf("Enter the poss num:");
+    }else{
+        for(i=0;i<=num;i++){
+            fact*=i;
+        }
+        printf("%dFactorial is:%u",num,fact);
     }
-    printf("Fact:%d",num,fact);
 }
