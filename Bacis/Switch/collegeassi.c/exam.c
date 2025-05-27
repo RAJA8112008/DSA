@@ -7,9 +7,9 @@ void main(){
     if(num<0){
         printf("Enter the poss num:");
     }else{
-        for(i=0;i<=num;i++){
+        for(i=1;i<=num;i++){
             fact*=i;
         }
-        printf("Factorial %d",fact);
+        printf("Factorial of %d is %lu\n", num, fact);
     }
 }
