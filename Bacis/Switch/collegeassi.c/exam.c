@@ -10,6 +10,6 @@ void main(){
         for(i=0;i<=num;i++){
             fact*=i;
         }
-        printf("%dFactorial is:%u",num,fact);
+        printf("Factorial %d",fact);
     }
 }
