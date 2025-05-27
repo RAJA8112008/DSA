@@ -17,24 +17,22 @@ void main(){
       crr[i][j]=arr[i][j]+brr[i][j];
         }
     }
-     printf("first matrix:");
-    printf("\n");
+     printf("first matrix:\n");
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             printf("%d\t",arr[i][j]);
         }
         printf("\n");
     }
-     printf("second matrix:");
-    printf("\n");
+     printf("second matrix:\n");
+   
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             printf("%d\t",brr[i][j]);
         }
       printf("\n");
     }
-    printf("sum of matrix:");
-    printf("\n");
+    printf("sum of matrix:\n");
     for(i=0;i<3;i++){
          crr[i][j]=arr[i][j]+brr[i][j];
         for(j=0;j<3;j++){
