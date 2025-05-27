@@ -10,6 +10,6 @@ void main(){
         for(i=1;i<=num;i++){
             fact*=i;
         }
-        printf("Factorial of %d is %lu\n", num, fact);
+        printf("Factorial of %d is: %lu\n", num, fact);
     }
 }
