@@ -1,15 +1,18 @@
 #include<stdio.h>
 void main(){
     int num,i;
-    unsigned long fact=1;
-    printf("Enter the name:");
+    int count=0;
+    printf("Enter the num:");
     scanf("%d",&num);
-    if(num<0){
-        printf("Enter the poss num:");
-    }else{
-        for(i=1;i<=num;i++){
-            fact*=i;
-        }
-        printf("Factorial of %d is: %lu\n", num, fact);
+    for(int i=1;i<=num;i++){
+    if(num%i==0){
+       count++;
     }
+}
+if(count==2){
+    printf("Num is prime",num);
+}else{
+    printf("num is not prime",num);
+}
+
 }
