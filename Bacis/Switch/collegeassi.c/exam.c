@@ -1,28 +1,17 @@
 #include<stdio.h>
 void main(){
-    char op;
-    int a,b;
-    printf("Enter the value of a &b:");
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf(" %c",&op);
-    switch(op){
-        case '+':
-        printf("Sum:%d",a+b);
-        break;
-        case '-':
-         printf("Sub:%d",a-b);
-        break;
-        case '*':
-         printf("mul:%d",a*b);
-        break;
-        case '/':
-         printf("Sub:%d",a/b);
-        break;
-            case '%':
-         printf("mod:%d",a%b);
-        break;
-        default:
-        printf("Enter valid oper");
+    int num,rem,temp,rev=0;
+    printf("Enter the num:");
+    scanf("%d",&num);
+    temp=num;
+    while(num>0){
+        rem=num%10;
+        rev=rev*10+rem;
+        num=num/10;
+    }
+    if(temp==rev){
+        printf("is pallindrome");
+    }else{
+        printf("not pallindrome");
     }
 }
