@@ -1,11 +1,8 @@
 #include<stdio.h>
 void main(){
-    int num,i;
-    unsigned long factorial=1;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    for(i=1;i<=num;i++){
-        factorial*=i;
+    int i,j;
+    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    for( i=0;i<3;i++){
+     printf("%d",&arr[i][j]);
     }
-printf("factorial is %lu",factorial);
 }
