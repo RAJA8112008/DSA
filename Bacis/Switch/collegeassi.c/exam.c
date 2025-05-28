@@ -1,16 +1,11 @@
-#include<stdio.h> 
+#include<stdio.h>
 void main(){
-    printf("Enter the numbers:");
-    int num1,num2,num3;
-    scanf("%d",&num1);
-    scanf("%d",&num2);
-    scanf("%d",&num3);
-    if(num1>num2 && num1>num2){
-        printf("num1 is greater");
-    }else if(num2>num1&&num2>num3){
-        printf("num2 is greater");
-    }
-    else{
-        printf("num3 is greater");
-    }
+    int year;
+    printf("Enter the year:");
+    scanf("%d",&year);
+ if((year%100!=0 && year%4==0)|| (year%400==0)){
+    printf("year is leap");
+ }else{
+    printf("year is not leap");
+ }
 }
