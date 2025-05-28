@@ -1,15 +1,18 @@
 #include<stdio.h>
-void main (){
-    int arr[3],brr[3],crr[3],i;
+void main(){
+    int arr[3][3],i,j;
+    printf("Enter the values:");
     for(i=0;i<3;i++){
-        scanf("%d",&arr[i]);
-    } 
-    for(i=0;i<3;i++){
-        scanf("%d",&brr[i]);
+        for(j=0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
     }
-    printf("total sum:\n");
+    printf("array is:\n ");
     for(i=0;i<3;i++){
-        crr[i]=arr[i]+brr[i];
-        printf("%d",crr[i]);
+        for(j=0;j<3;j++){
+            printf("%d\t",arr[i][j]);
+        }
+        printf("\n");
     }
+
 }
