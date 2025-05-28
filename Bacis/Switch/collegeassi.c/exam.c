@@ -1,11 +1,28 @@
 #include<stdio.h>
 void main(){
-    int year;
-    printf("Enter the year:");
-    scanf("%d",&year);
- if((year%100!=0 && year%4==0)|| (year%400==0)){
-    printf("year is leap");
- }else{
-    printf("year is not leap");
- }
+    char op;
+    int a,b;
+    printf("Enter the value of a &b:");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&op);
+    switch(op){
+        case '+':
+        printf("Sum:&",a+b);
+        break;
+        case '-':
+         printf("Sub:%d",a-b);
+        break;
+        case '*':
+         printf("mul:%d",a*b);
+        break;
+        case '/':
+         printf("Sub:%d",a/b);
+        break;
+            case '%':
+         printf("mod:%d",a%b);
+        break;
+        default:
+        printf("Enter valid oper");
+    }
 }
