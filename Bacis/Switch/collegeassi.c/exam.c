@@ -1,8 +1,15 @@
 #include<stdio.h>
-void main(){
-    int i,j;
-    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    for( i=0;i<3;i++){
-     printf("%d",&arr[i][j]);
+void main (){
+    int arr[3],brr[3],crr[3],i;
+    for(i=0;i<3;i++){
+        scanf("%d",&arr[i]);
+    } 
+    for(i=0;i<3;i++){
+        scanf("%d",&brr[i]);
+    }
+    printf("total sum:\n");
+    for(i=0;i<3;i++){
+        crr[i]=arr[i]+brr[i];
+        printf("%d",crr[i]);
     }
 }
