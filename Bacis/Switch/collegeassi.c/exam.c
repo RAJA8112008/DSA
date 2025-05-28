@@ -5,10 +5,10 @@ void main(){
     printf("Enter the value of a &b:");
     scanf("%d",&a);
     scanf("%d",&b);
-    scanf("%d",&op);
+    scanf(" %c",&op);
     switch(op){
         case '+':
-        printf("Sum:&",a+b);
+        printf("Sum:%d",a+b);
         break;
         case '-':
          printf("Sub:%d",a-b);
