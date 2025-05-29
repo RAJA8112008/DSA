@@ -17,6 +17,8 @@ void main(){
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             crr[i][j]=0;
+
+            
             for(k=0;k<3;k++){
                 crr[i][j]=crr[i][j]+arr[i][k]*brr[k][j];
             }
