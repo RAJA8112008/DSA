@@ -7,11 +7,13 @@ using namespace std;
          return;
       }
       //one case solve
-      if(nums[start]==nums[end]){
-       cout<<nums[end]<<endl;
+      for(int i=start;i<=end;i++){
+        cout<<nums[i];
       }
+      cout<<endl;
+    
       //funvtion call
-      return substring(nums,start,end+1);
+     substring(nums,start,end+1);
   }
 int main(){
   vector<int>nums{1,2,3,4,5};
