@@ -18,6 +18,11 @@ int main(){
     string str="nitin";
     int s=0;
     int e=str.length()-1;
+    for(auto ch:str){
+        if(ch<'A' && ch>='Z'){
+            ch=ch+32;
+        }
+    }
   if(checkpallindrome(str,s,e)){
     cout<<"Pallindrome"<<endl;
   }else{
