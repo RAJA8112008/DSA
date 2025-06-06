@@ -15,8 +15,8 @@ int checkpallindrome( string str,int s,int e){
  }
 
 int main(){
-    string str="nitin";
-    int s=str[0];
+    string str="Notin";
+    int s=0;
     int e=str.length()-1;
   if(checkpallindrome(str,s,e)){
     cout<<"Pallindrome"<<endl;
