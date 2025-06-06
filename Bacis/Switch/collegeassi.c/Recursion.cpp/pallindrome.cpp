@@ -1,24 +1,26 @@
 #include<iostream>
 using namespace std;
-
-int checkpallindrome(int s,int e){
-
+int checkpallindrome( string str,int s,int e){
  //base condition
- if(s>e){
-    return false;
+ if(s>=e){
+    return true;
  }
  // solve one case
- if(s==e){
-    return true;
- }else{
+ if(str[s]!=str[e]){
     return false;
+ }else{
+    return true;
  }
- return checkpallindrome(s+1,e-1);
+ return checkpallindrome(str,s+1,e-1);
  }
 
 int main(){
-    string str="raja";
+    string str="nitin";
     int s=str[0];
-    int e=str.length();
-   return checkpallindrome(s,e);
+    int e=str.length()-1;
+  if(checkpallindrome(str,s,e)){
+    cout<<"Pallindrome"<<endl;
+  }else{
+    cout<<"not pallindrome"<<endl;
+  }
 }
