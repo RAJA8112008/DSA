@@ -15,7 +15,7 @@ int checkpallindrome( string str,int s,int e){
  }
 
 int main(){
-    string str="Nitin";
+    string str="nitin";
     int s=0;
     int e=str.length()-1;
   if(checkpallindrome(str,s,e)){
