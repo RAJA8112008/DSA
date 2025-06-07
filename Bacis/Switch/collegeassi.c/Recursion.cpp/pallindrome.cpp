@@ -8,6 +8,8 @@ using namespace std;
       }
       //one case solve
       for(int i=start;i<=end;i++){
+
+        
         cout<<nums[i];
       }
       cout<<endl;
