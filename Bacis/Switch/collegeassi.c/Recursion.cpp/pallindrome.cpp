@@ -13,8 +13,6 @@ using namespace std;
         cout<<nums[i];
       }
       cout<<endl;
-    
-      //funvtion call
      substring(nums,start,end+1);
   }
   void allsubstring(vector<int>nums){
