@@ -17,7 +17,6 @@ int main() {
         }
         printf("\n");
     }
-
     // Bottom row (full stars)
     for (int i = 0; i < 2 * rows - 1; i++) {
         printf("* ");
