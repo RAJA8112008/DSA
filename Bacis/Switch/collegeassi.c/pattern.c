@@ -1,28 +1,21 @@
 #include<stdio.h>
-int find(int arr[],int target,int n){
-    int st=0;
-    int ed=n-1;
-    while(st<=ed){
-        int mid=st+(ed-st)/2;
-        if(arr[mid]==target){
-            return mid;
-        }else if(arr[mid]>target){
-            ed=mid-1;
-        }else{
-            st=mid+1;
+int bubble(int arr[],int n){
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n-i-1;j++){
+            if(arr[j]<arr[j+1]){
+                int temp=arr[j];
+                 arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
     }
-    }
-    return -1;
 }
-
-int main(){
-    int arr[8]={1,5,48,69,88};
-    int target=6;
+int  main(){
+    int arr[5]={1,3,5,6,0};
     int n=sizeof(arr)/sizeof(arr[0]);
-    int ans=find(arr,target,n);
-    if(ans!=-1){
-        printf("Target index:%d",ans);
-    }else{
-        printf("num is not availavle\n");
-    }
+  bubble(arr,n);
+  printf("Sorted array:\n");
+  for(int i=0;i<n;i++){
+    printf("ARRAY is :%d\n",arr[i]);
+  }
 }
