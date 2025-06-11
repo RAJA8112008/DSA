@@ -17,7 +17,7 @@ int find(int arr[],int target,int n){
 
 int main(){
     int arr[8]={1,5,48,69,88};
-    int target=5;
+    int target=6;
     int n=sizeof(arr)/sizeof(arr[0]);
     int ans=find(arr,target,n);
     if(ans!=-1){
