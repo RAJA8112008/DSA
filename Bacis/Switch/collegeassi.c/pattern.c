@@ -1,20 +1,28 @@
 #include<stdio.h>
-int ftarget(int arr[],int target,int n){
-for(int i=0;i<n;i++){
-    if(arr[i]==target){
-        return i;
+int find(int arr[],int target,int n){
+    int st=0;
+    int ed=n-1;
+    while(st<=ed){
+        int mid=st+(ed-st)/2;
+        if(arr[mid]==target){
+            return mid;
+        }else if(arr[mid]>target){
+            ed=mid-1;
+        }else{
+            st=mid+1;
     }
+    }
+    return -1;
 }
-return -1;
-}
+
 int main(){
-    int arr[5]={10,25,46,89,5};
-    int target=9;
+    int arr[8]={1,5,48,69,88};
+    int target=5;
     int n=sizeof(arr)/sizeof(arr[0]);
-    int ans=ftarget(arr,target,n);
+    int ans=find(arr,target,n);
     if(ans!=-1){
-    printf("index of target %d\n",ans);
+        printf("Target index:%d",ans);
     }else{
-        printf("Target is not available:\n",ans);
+        printf("num is not availavle\n");
     }
 }
