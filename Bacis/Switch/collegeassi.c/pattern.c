@@ -1,15 +1,18 @@
-#include<stdio.h>
-int fact(int num){
-    if(num==0){
-        return 1;
-    }
-    return num*fact(num-1);
+#include <stdio.h>
+
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
 }
 
-int main(){
-    int num;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    int result=fact(num);
-    printf(" Factorial of %d is %d\n",num,result);
+int main() {
+    int num1, num2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    int result = gcd(num1, num2);
+    printf("GCD of %d and %d is %d\n", num1, num2, result);
+
+    return 0;
 }
