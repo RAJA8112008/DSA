@@ -1,27 +1,15 @@
-#include <stdio.h>
-
-int main() {
-    int rows = 5;
-
-    // Upper part of the tree
-    for (int i = 0; i < rows - 1; i++) {
-        for (int j = 0; j < rows - i - 1; j++) {
-            printf("  ");
-        }
-        printf("*");
-        if (i > 0) {
-            for (int j = 0; j < 2 * i - 1; j++) {
-                printf("  ");
-            }
-            printf(" *");
-        }
-        printf("\n");
+#include<stdio.h>
+void fact(int i,int num,int factorial){
+    if(num==0){
+        return 1;
     }
-    // Bottom row (full stars)
-    for (int i = 0; i < 2 * rows - 1; i++) {
-        printf("* ");
+    for(int i=1;i<=num;i++){
+        return num*fact(i+1);
     }
-    printf("\n");
-
-    return 0;
+}
+int main(){
+    int i,num,factorial=1;
+    printf("Enter the num:");
+    scanf("%d",&num);
+    return fact( i,num);
 }
