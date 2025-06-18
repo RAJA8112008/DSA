@@ -21,10 +21,10 @@ using namespace std;
     }
     //coping extra elements
     while(i<n1){
-        arr[k++]=L[j++];
+        arr[k++]=L[i++];
     }
     while(j<n2){
-        arr[k++]=R[i++];
+        arr[k++]=R[j++];
     }
  }
 void mergeSort(int*arr,int st,int end){
