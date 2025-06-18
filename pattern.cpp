@@ -13,18 +13,18 @@ using namespace std;
     //merging two array
     int i=0,j=0,k=st;
     while(i<n1 && j<n2){
-        if(R[i]<L[j]){
-            arr[k++]=R[i++];
+        if(R[j]<L[i]){
+            arr[k++]=R[j++];
         }else{
-            arr[k++]=L[j++];
+            arr[k++]=L[i++];
         }
     }
     //coping extra elements
     while(i<n1){
-        arr[k++]=R[i++];
+        arr[k++]=L[j++];
     }
     while(j<n2){
-        arr[k++]=L[j++];
+        arr[k++]=R[i++];
     }
  }
 void mergeSort(int*arr,int st,int end){
