@@ -3,12 +3,12 @@ using namespace std;
  void merge(int*arr,int st,int mid,int end){
     int n1=mid-st+1;
     int n2=end-mid;
-    int R[n1],L[n2];
+    int L[n1],R[n2];
     for(int i=0;i<n1;i++){
-        R[i]=arr[st+i];
+        L[i]=arr[st+i];
     }
     for(int j=0;j<n2;j++){
-        L[j]=arr[mid+1+j];
+        R[j]=arr[mid+1+j];
     }
     //merging two array
     int i=0,j=0,k=st;
