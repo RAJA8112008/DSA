@@ -29,6 +29,9 @@ using namespace std;
  }
 void mergeSort(int*arr,int st,int end){
     int mid=st+(end-st)/2;
+    if(st>=end){
+        return;
+    }
     mergeSort(arr,st,mid);
     mergeSort(arr,mid+1,end);
     merge(arr,st,mid,end);
