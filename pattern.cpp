@@ -1,18 +1,9 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=4;
-    for(int i=1;i<=n;i++){
-        for(int j=0;j<=n-i-1;j++){
-            cout<<" ";
-        }
-        for(int j=0;j<=0;j++){
-            cout<<"*";
-        }
-           
-   
-        cout<<endl;
-     }
-           
-     return 0;   
+    string s={2,3,4,7,8,9,54,89,79};
+    int n=9;
+    int st=0;
+    int ed=s.size()-1;
+    mergeSort(s,0,)
 }
