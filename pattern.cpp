@@ -40,8 +40,8 @@ void mergSort(int*arr,int left,int right){
 
 
 int main(){
-    int arr[]={2,3,4,7,8,54,8,89,79};
-    int n=9;
+    int arr[]={2,2,2,2,6,7,8,6,4,7,8,54,8,89,79};
+    int n=sizeof(arr)/sizeof(arr[0]);
     mergSort(arr,0,n-1); 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
