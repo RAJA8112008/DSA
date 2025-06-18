@@ -1,9 +1,22 @@
 #include<iostream>
 using namespace std;
+
+void merge(int*arr,int left,int mid,int right){
+    
+}
+void mergSort(int*arr,int left,int right){
+    if(left>=right){
+        return;
+    }
+    int mid =left+(right-left)/2;
+    mergSort(arr,left,mid);
+    mergSort(arr,mid+1,right);
+    merge(arr,left,mid,right);
+}
+
+
 int main(){
-    int s={2,3,4,7,8,9,54,89,79};
+    int arr[]={2,3,4,7,8,9,54,89,79};
     int n=9;
-    int st=0;
-    int ed=s.size()-1;
-    mergeSort(s,0,)
+    mergSort(s,0,n-1);
 }
