@@ -1,11 +1,11 @@
 #include<stdio.h>
 void main(){
-int n,i;
-scanf("%d",&n);
-unsigned long fact=1;
-for(i=1;i<=n;i++){
-    fact=fact*i;
-}
-
-printf("%lu",fact,n);
+    int num,sum=0,rem;
+    scanf("%d",&num);
+    while(num!=0){
+    rem=num%10;
+    sum=sum*10+rem;
+    num=num/10; 
+    }
+    printf("reversed num:%d",sum);   
 }
