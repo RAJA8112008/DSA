@@ -1,25 +1,25 @@
 #include<stdio.h>
 void main(){
-    int arr[10],i,j,n,temp;
-    printf("Enter the value of n:");
-    scanf("%d",&n);
-    //Enter the value of Array
-    for(i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    //Insertion sort processing 
-    printf("Enter the values of Array:");
-    for(i=1;i<n;i++){
-        temp=arr[i];
-        j=i-1;
-        while(j>=0 && arr[j]>temp){
-            arr[j+1]=arr[j];
-            j--;
+    int arr[10][10],i,j;
+    printf("Enter the values:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<4;j++){
+            scanf("%d",&arr[i][j]);
         }
-        arr[j+1]=temp;
     }
-    printf("Sorted array:");
-for(i=0;i<n;i++){
- printf("%d",arr[i]);
-  }
+    printf("Matrix is :\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<4;j++){
+            printf("%d\t",arr[i][j]);
+        }
+        printf("\n");
+        
+    }
+    printf("Transpose:\n");
+    for(i=0;i<4;i++){
+        for(j=0;j<3;j++){
+            printf("%d\t",arr[j][i]);
+        }
+        printf("\n");
+    }
 }
