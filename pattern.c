@@ -1,11 +1,6 @@
 #include<stdio.h>
 void main(){
-    int num,sum=0,rem;
-    scanf("%d",&num);
-    while(num!=0){
-    rem=num%10;
-    sum=sum*10+rem;
-    num=num/10; 
+    for(int i=1;i<=10;i++){
+        printf("\nTable of 13:%d",13*i);
     }
-    printf("reversed num:%d",sum);   
 }
