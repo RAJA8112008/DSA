@@ -1,15 +1,18 @@
 #include<stdio.h>
-int sum(int,int); //function decleration
-void main(){
-      int a,b,result;  //sum of n numbers using function
-      printf("Enter the value of n:");
-      scanf("%d",&a);
-      scanf("%d",&b);
-      
-      result= sum(a,b);
-   printf("sum:%d",result);
-}                  
-int sum(int x,int y){
-    int total=x+y;
-    return total;
+void max(int,int);
+int main(){
+   int a,b;
+    printf("Enter the values:");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    max(a,b);
+}
+  void max(int a,int b){
+     if(a>b){
+        printf("A is greater");
+     }else{
+         printf("B is greater");
+     }
+
+    
 }
