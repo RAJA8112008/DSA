@@ -1,11 +1,15 @@
 #include<stdio.h>
 void main(){
-    int a,b,c,max;
-    printf("Enter the values:");
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    max=a>b?(a>c?a:c):(b>c?b:c);
-    printf("Greater among :%d",max);
-
+    int num,i,count=0;
+    scanf("%d",&num);
+    for(i=2;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+        printf("num is prime");
+    }else{
+        printf("num is not prime");
+    }
 }
