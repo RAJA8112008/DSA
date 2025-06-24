@@ -1,15 +1,13 @@
 #include<stdio.h>
 void main(){
-    int a,b,c;
-    printf("Enter the numbers");
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    if(a>b &&a>c){
-        printf("A is greater");
-    }else if(b>a&&b>c){
-        printf("B is greater");
-    }else{
-        printf("C is greater");
-    }
+    int i,rem,num,temp,sum=0;
+    printf("Enter the num:");
+    scanf("%d",&num);
+while(num!=0){
+    rem=num%10;
+    sum=sum+rem;
+    num=num/10;
+}
+printf("SUM is:%d",sum);
+
 }
