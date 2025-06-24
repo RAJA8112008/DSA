@@ -1,11 +1,11 @@
 #include<stdio.h>
 void main(){
-    int year;
-    printf("Enter the year:");
-    scanf("%d",&year);
-    if((year%100!=0 && year%400==0)||(year%4==0)){
-        printf("Year is leap");
-    }else{
-        printf("year is not leap");
-    }
+    int a,b,c,max;
+    printf("Enter the values:");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    max=a>b?(a>c?a:c):(b>c?b:c);
+    printf("Greater among :%d",max);
+
 }
