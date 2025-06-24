@@ -7,9 +7,9 @@ void main(){
     if(num<0){
         printf("num is negative");
     }else{
-    for(int i=1;i<num;i++){
-        fact=fact*i;
+    for(int i=1;i<=num;i++){
+        fact*=i;
     }
-    printf("%ul",fact);
+    printf("%lu",fact);
 }
 }
