@@ -1,22 +1,18 @@
 #include<stdio.h>
 
-int fact(int num){
-    if(num==0||num==1){
+int fibo(int n){
+    if(n==0){
+        return 0;
+    }else if(n==1){
         return 1;
     }
-    return num*fact(num-1);
+    return fibo(n-1)+fibo(n-2);
 }
-
-int  main(){
-    int n;
-printf("Enter the num:");
-scanf("%d",&n);
-if(n<0){
-
-    printf("NO number found");
-}else{
- int result=fact(n);
-printf("%d",result);
-}
-return 0;
+int main(){
+ int n,i;
+ scanf("%d",&n);
+ printf("Fibonaci  series:");
+ for(i=0;i<n;i++){
+    printf("%d",fibo(i));
+ }
 }
