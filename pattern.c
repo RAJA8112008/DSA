@@ -1,16 +1,8 @@
 #include<stdio.h>
 void main(){
-    int num,i,count=0;
-  printf("Enter the num:");
-  scanf("%d",&num);
- for(i=1;i<=num;i++){
-    if(num%i==0){
-        count++;
+    int i;
+    int arr[10]={1,2,3,4};
+    for(int i=0;i<4;i++){
+        printf("%d\t",arr[i]);
     }
- }
- if(count==2){
-    printf("Prime");
- }else{
-    printf("Not prime");
- }
 }
