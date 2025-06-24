@@ -1,15 +1,23 @@
 #include<stdio.h>
 void main(){
-    int i,arr[10],n;
-    printf("Enter the value of N:");
-    scanf("%d",&n);
-   printf("Enter the num:");
-   for(i=0;i<n;i++){
-    scanf("%d",&arr[i]);
-   }
-   printf("Array is:\n");
-   for(i=0;i<n;i++){
-     printf("%d",arr[i]);
-   }
-   
+    int marks;
+    printf("Enter the value of marks:");
+    scanf("%d",&marks);
+    switch(marks/10){
+        case 10:
+        case 9:
+        printf("G-A");
+        break;
+        case 8:
+        printf("G-B");
+        break;
+        case 7:
+        printf("G-C");
+        break;
+        case 6:
+        printf("G-D");
+        break;
+        default:
+        printf("Fail");
+    }
 }
