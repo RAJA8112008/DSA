@@ -1,11 +1,15 @@
 #include<stdio.h>
 void main(){
-    int num;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    if(num%10==0){
-        printf("Num is even");
+    int a,b,c;
+    printf("Enter the numbers");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    if(a>b &&a>c){
+        printf("A is greater");
+    }else if(b>a&&b>c){
+        printf("B is greater");
     }else{
-        printf("num is odd");
+        printf("C is greater");
     }
 }
