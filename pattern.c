@@ -1,15 +1,16 @@
 #include<stdio.h>
 void main(){
-    int num,i;
-    unsigned long fact=1;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    if(num<0){
-        printf("num is negative");
-    }else{
-    for(int i=1;i<=num;i++){
-        fact*=i;
+    int num,i,count=0;
+  printf("Enter the num:");
+  scanf("%d",&num);
+ for(i=1;i<=num;i++){
+    if(num%i==0){
+        count++;
     }
-    printf("%lu",fact);
-}
+ }
+ if(count==2){
+    printf("Prime");
+ }else{
+    printf("Not prime");
+ }
 }
