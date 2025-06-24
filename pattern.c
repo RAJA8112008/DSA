@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main(){
-    int n,arr[100],j,i,x;
+    int n,arr[100],j,i,x,count=0;
     printf("Enter the value of n:");
     scanf("%d",&n);
     for(i=0;i<n;i++){
@@ -16,8 +16,14 @@ void main(){
     // finding element in array 
     for(i=0;i<n;i++){
     if(arr[i]==x){
-        printf("Available"); 
+       count=1;
+       break;
     }
+}
+if(count=1){
+printf("Available ");
+}else{
+   printf(" not Available"); 
 }
 }
 
