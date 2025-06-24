@@ -1,8 +1,15 @@
 #include<stdio.h>
 void main(){
-    int i;
-    int arr[10]={1,2,3,4};
-    for(int i=0;i<4;i++){
-        printf("%d\t",arr[i]);
-    }
+    int i,arr[10],n;
+    printf("Enter the value of N:");
+    scanf("%d",&n);
+   printf("Enter the num:");
+   for(i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+   }
+   printf("Array is:\n");
+   for(i=0;i<n;i++){
+     printf("%d",arr[i]);
+   }
+   
 }
