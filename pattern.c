@@ -1,6 +1,11 @@
 #include<stdio.h>
 void main(){
-    for(int i=1;i<=10;i++){
-        printf("\nTable of 13:%d",13*i);
+    int num;
+    printf("Enter the num:");
+    scanf("%d",&num);
+    if(num%10==0){
+        printf("Num is even");
+    }else{
+        printf("num is odd");
     }
 }
