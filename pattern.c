@@ -1,24 +1,14 @@
 #include<stdio.h>
-void main(){
-    int arr[100],i,j,n,temp;
-    scanf("%d",&n);
-    for(i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+int recur(num){
+    if(num==0){
+    return 1;
+    }else{
+        return num*recur(num-1);
     }
-    
-//selection sort 
-for(i=0;i<n;i++){
-    for(j=i+1;j<n;j++){
-        if(arr[i]>arr[j]){
-            temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
-       
-         } }
-    }
-    for(i=0;i<n;i++){
-    printf("%d ",arr[i]);
-    }
-
-
+}
+int main(){
+    int num,result;
+    scanf("%d",&num);
+   result=recur(num);
+   printf("%d",result);
 }
