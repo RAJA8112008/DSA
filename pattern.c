@@ -1,15 +1,20 @@
 #include<stdio.h>
 void main(){
-    int num,i,count=0;
-    scanf("%d",&num);
-    for(i=2;i<=num;i++){
-        if(num%i==0){
-            count++;
+    int arr[100],i,j,n,temp;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
         }
     }
-    if(count==2){
-        printf("num is prime");
-    }else{
-        printf("num is not prime");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
     }
 }
