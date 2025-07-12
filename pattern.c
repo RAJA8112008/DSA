@@ -1,8 +1,11 @@
 #include<stdio.h>
 void main(){
     int arr[100],n;
+    int val,count=0;
     printf("Enter the size of Arrays:");
     scanf("%d",&n);
+    printf("Enter the value:");
+    scanf("%d",&val);
     printf("Enter the value of arr1:");
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
@@ -11,16 +14,15 @@ void main(){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
-   int min=arr[0];
-   int max=arr[0];
-   for(int i=0;i<n;i++){
-    if(min>arr[i]){
-        min=arr[i];
+    for(int i=0;i<n;i++){
+        if(val==arr[i]){
+           count++;
+        }
     }
-    if(max<arr[i]){
-        max=arr[i];
-    }
-   }
-   printf("min is:%d",min);
-    printf("max is:%d",max);
+    if(count==1){
+           printf("yes");
+        }else{
+             printf("NO");
+        }
+  
 }
