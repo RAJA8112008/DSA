@@ -1,18 +1,19 @@
 #include<stdio.h>
 void main(){
-    int num,rem,original,sum=0;
-    
-    scanf("%d",&num);
-    original=num;
-    while(num!=0){
-        rem=num%10;
-        sum=sum+rem*rem*rem;
-        num=num/10;
+    int arr[100],n,sum=0;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements:");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-   if(original==sum){
-    printf("pallindrome");
-   }else{
-    printf(" not pallindrome");
-   }
+    printf("Array is:");
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+     printf("Array Sum is:");
+    for(int i=0;i<n;i++){
+        sum=sum+arr[i];
+    }
+      printf("%d",sum);
 }
-
