@@ -1,17 +1,12 @@
 #include<stdio.h>
 void main(){
-    int num,count=0;
-    printf("Enter the value of num:");
+    int num,rem,sum=0;
     scanf("%d",&num);
-    for(int i=1;i<=num;i++){
-        if(num%i==0){
-            count++;
-        }
+    while(num!=0){
+        rem=num%10;
+        sum=sum+rem;
+        num=num/10;
     }
-    if(count==2){
-        printf("Num is prime");
-    }else{
-        printf("NOT  prime");
-    }
-
+    printf("SUM of digit:%d",sum);
 }
+
