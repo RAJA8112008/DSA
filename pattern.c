@@ -1,28 +1,29 @@
 #include<stdio.h>
 void main(){
-    int arr[100],n;
-    int val,count=0;
-    printf("Enter the size of Arrays:");
-    scanf("%d",&n);
-    printf("Enter the value:");
-    scanf("%d",&val);
-    printf("Enter the value of arr1:");
+    int arr[100][100],n,m;
+    printf("Enter the size of row:");
+     scanf("%d",&n);
+     printf("Enter the size of col:");
+     scanf("%d",&m);
+    printf("Enter the matrix values:");
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-     printf("Array1 is:");
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
-    for(int i=0;i<n;i++){
-        if(val==arr[i]){
-           count++;
+        for(int j=0;j<m;j++){
+            scanf("%d",&arr[i][j]);
         }
     }
-    if(count==1){
-           printf("yes");
-        }else{
-             printf("NO");
+    printf("Original matrix:\n");
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",arr[i][j]);
         }
-  
+        printf("\n");
+    }
+printf("Transpose matrix:\n");
+for(int i=0;i<m;i++){
+    for(int j=0;j<n;j++){
+        printf("%d ",arr[j][i]);
+    }
+     printf("\n");
+}
+
 }
