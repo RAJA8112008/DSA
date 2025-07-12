@@ -1,14 +1,16 @@
 #include<stdio.h>
-int recur(num){
-    if(num==0){
-    return 1;
-    }else{
-        return num*recur(num-1);
+int febo(int n){
+    if(n==0){
+        return 0;
+    }else if(n==1){
+        return 1;
     }
+    return febo(n-1)+febo(n-2);
 }
 int main(){
-    int num,result;
-    scanf("%d",&num);
-   result=recur(num);
-   printf("%d",result);
+    int n,result;
+    scanf("%d",&n);
+    result=febo(n);
+    printf("%d",result);
+
 }
