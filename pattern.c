@@ -1,15 +1,17 @@
 #include<stdio.h>
 void main(){
-    int ed,evensum=0,oddsum=0;
-    printf("Enter the  ending value");
-    scanf("%d",&ed);
-    for(int i=1;i<=ed;i++){
-        if(i%2==0){
-            evensum=evensum+i;
-        }else{
-            oddsum=oddsum+i;
+    int num,count=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
         }
     }
-    printf("Sum of even num:%d\n",evensum);
-    printf("sum of odd num:%d",oddsum);
+    if(count==2){
+        printf("Num is prime");
+    }else{
+        printf("NOT  prime");
+    }
+
 }
