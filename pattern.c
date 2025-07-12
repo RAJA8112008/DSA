@@ -1,13 +1,11 @@
 #include<stdio.h>
 void main(){
-    int st,end;
-    int sum=0;
-   
-     printf("Enter Ending value:");
-    scanf("%d",&end);
-
-    for(int i=0;i<=end;i++){
-        sum=sum+i;
+    int n,fact=1;
+    printf("Enter the number");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
     }
-    printf("SUm is:%d",sum);
+    printf("Factorial is:%d",fact);
+
 }
