@@ -1,12 +1,18 @@
 #include<stdio.h>
 void main(){
-    int num,rem,sum=0;
+    int num,rem,original,sum=0;
+    
     scanf("%d",&num);
+    original=num;
     while(num!=0){
         rem=num%10;
-        sum=sum*10+rem;
+        sum=sum+rem*rem*rem;
         num=num/10;
     }
-    printf("SUM of digit:%d",sum);
+   if(original==sum){
+    printf("pallindrome");
+   }else{
+    printf(" not pallindrome");
+   }
 }
 
