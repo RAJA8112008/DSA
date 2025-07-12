@@ -2,13 +2,12 @@
 void main(){
     int st,end;
     int sum=0;
-    printf("Enter starting value:");
-    scanf("%d",&st);
+   
      printf("Enter Ending value:");
     scanf("%d",&end);
 
-    for(int st;st<=end;st++){
-        sum=sum+st;
+    for(int i=0;i<=end;i++){
+        sum=sum+i;
     }
     printf("SUm is:%d",sum);
 }
