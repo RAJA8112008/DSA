@@ -4,7 +4,7 @@ void main(){
     scanf("%d",&num);
     while(num!=0){
         rem=num%10;
-        sum=sum+rem;
+        sum=sum*10+rem;
         num=num/10;
     }
     printf("SUM of digit:%d",sum);
