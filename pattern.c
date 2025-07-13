@@ -1,17 +1,27 @@
 #include<stdio.h>
-#include<stdlib.h>
 void main(){
-  int n;
-  printf("Enter the value of n: ");
-  scanf("%d",&n);
-  int *ptr=(int*)malloc(n*sizeof(int));
-  int *p=ptr;
-  for(int i=0;i<n;i++){
-    scanf("%d",&(*ptr));
-    ptr++;
-  }
-  for(int i=0;i<n;i++ ){
-    printf("%d ",*p);
-    p++;
-  }
+    int n,arr[100],temp;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+     printf("array is:");
+     for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    //bubble sorting process
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i-1;j++){
+            if(arr[j]>arr[j+1]){
+              temp=arr[j];
+              arr[j]=arr[j+1];
+              arr[j+1]=temp;
+            }
+        }
+    }
+    printf("\n");
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
 }
