@@ -1,29 +1,14 @@
 #include<stdio.h>
-void main(){
-    int n,arr[100],j,temp;
-    printf("Enter the size of array:");
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-     printf("array is:");
-     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
-    //Selection  sorting process
-    for(int i=0;i<n-1;i++){
-       int min=i;
-       for(int j=i+1;j<n;j++){
-        if(arr[j]<arr[min]){
-            min=j;
-        }
-       }
-       temp=arr[i];
-    arr[i]=arr[min];
-    arr[min]=temp;
-    }
-    printf("\n");
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
+#define PI 3.14
+void calculatr(float*r,float*cirf,float*area){
+ *area=PI*(*r)*(*r);
+ *cirf=2*PI*(*r);
+}
+int main(){
+    float radius,cirf,area;
+  printf("Enter the radius:");
+  scanf("%f",&radius);
+calculatr(&radius,&cirf,&area);
+printf("Area:%.2f\n",area);
+printf("Cirf:%.2f\n",cirf);
 }
