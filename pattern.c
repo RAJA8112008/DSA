@@ -1,14 +1,29 @@
 #include<stdio.h>
-#define PI 3.14
-void calculatr(float*r,float*cirf,float*area){
- *area=PI*(*r)*(*r);
- *cirf=2*PI*(*r);
+void main(){
+    for(int i=2;i<=7;i++){
+        for(int j=i;j<=7;j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
 }
-int main(){
-    float radius,cirf,area;
-  printf("Enter the radius:");
-  scanf("%f",&radius);
-calculatr(&radius,&cirf,&area);
-printf("Area:%.2f\n",area);
-printf("Cirf:%.2f\n",cirf);
-}
+
+
+// 2 3 4 5 6 7  
+// 3 4 5 6 7  
+// 4 5 6 7  
+// 5 6 7  
+// 6 7  
+// 7  
+
+
+
+
+
+
+
+
+
+
+
+
