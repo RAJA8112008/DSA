@@ -1,17 +1,18 @@
 #include<stdio.h>
-void main(){
-    int rem,num,sum=0,original;
-    printf("Enter the marks:");
-    scanf("%d",&num);
-  original=num;
-  while(num!=0){
-    rem=num%10;
-    sum=sum+rem*rem*rem;
-    num=num/10;
-  }
- if(sum==original){
-    printf("Pallindrome");
- }else{
-    printf("Not Pallindrome");
+ int fact(int n){
+ if(n==0){
+    return 1;
  }
+ if(n==1){
+    return 1;
+ }
+ return n*fact(n-1);
+ }
+
+int main(){
+    int num,n;
+    printf("Enter the num:");
+    scanf("%d",&num);
+    int result=fact(num);
+    printf("%d",result);
 }
