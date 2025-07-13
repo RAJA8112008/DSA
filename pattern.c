@@ -1,27 +1,24 @@
 #include<stdio.h>
 void main(){
-    int arr[100],target,n,i,count=0;
-    printf("Enter the size of array:");
-    scanf("%d",&n);
-    printf("Enter the Target:");
-    scanf("%d",&target);
-    printf("Enter the values of array:");
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    int marks;
+    printf("Enter the marks:");
+    scanf("%d",&marks);
+
+    switch(marks/10){
+        case 10:
+        case 9:
+        printf("Grade A");
+        break;
+        case 8:
+        printf("Grade B");
+        break;
+        case 7:
+        printf("Grade c");
+        break;
+        case 6:
+        printf("Grade D");
+        break;
+        default:
+        printf("Fail");
     }
-    printf("Array is:");
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
-    for(int i=0;i<n;i++){
-       if(arr[i]==target){
-        count++;
-       }
-    }
-    if(count==1){
-        printf("YES");
-    }else{
-        printf("NO");
-    }
-   
 }
