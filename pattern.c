@@ -14,5 +14,4 @@ void main(){
  }else{
     printf("Not Pallindrome");
  }
-
 }
