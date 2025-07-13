@@ -4,13 +4,13 @@ void main(){
     int num,rem,sum=0,original;
   printf("Enter the num:");
   scanf("%d",&num);
-  original=sum;
+  original=num;
   while(num!=0){
     rem=num%10;
     sum=sum*10+rem;
     num=num/10;
   }
-if(original==num){
+if(original==sum){
     printf("Yes");
 }else{
     printf("NO");
