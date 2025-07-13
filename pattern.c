@@ -1,20 +1,15 @@
+
 #include<stdio.h>
 void main(){
-    for(int i=2;i<=7;i++){
-        for(int j=i;j<=7;j++){
-            printf("%d ",j);
+    for(int i=0;i<4;i++){
+        for(int j=i;j<4;j++){
+            printf("*");
         }
         printf("\n");
     }
 }
 
 
-// 2 3 4 5 6 7  
-// 3 4 5 6 7  
-// 4 5 6 7  
-// 5 6 7  
-// 6 7  
-// 7  
 
 
 
@@ -23,7 +18,7 @@ void main(){
 
 
 
-
-
-
-
+// ****
+// ***
+// **
+// *
