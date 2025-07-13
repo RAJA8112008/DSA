@@ -3,22 +3,20 @@ void main(){
     int marks;
     printf("Enter the marks:");
     scanf("%d",&marks);
-
-    switch(marks/10){
-        case 10:
-        case 9:
-        printf("Grade A");
-        break;
-        case 8:
-        printf("Grade B");
-        break;
-        case 7:
-        printf("Grade c");
-        break;
-        case 6:
-        printf("Grade D");
-        break;
-        default:
-        printf("Fail");
-    }
+if(marks<100&&marks>=90){
+    printf("Grade A");
+}else if(marks<90&& marks>=80){
+    printf("Grade B");
+}
+else if(marks<80 && marks>=70){
+    printf("Grade C");
+}
+else if(marks<60 && marks>=50){
+    printf("Grade D");
+}
+else if(marks>=0 &&marks<49){
+    printf("Fail");
+}else{
+    printf("Invalid");
+}
 }
