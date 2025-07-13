@@ -1,28 +1,18 @@
 #include<stdio.h>
 void main(){
-    int num1,num2;
-    char operator;
-    printf("Enter the num1:");
-    scanf("%d",&num1);
-     printf("Enter the num2:");
-    scanf("%d",&num2);
-    printf("Enterr the operator:");
-    scanf(" %c",&operator);
-   
-    switch(operator){
-        case '+':
-        printf("Sum:%d",num1+num2);
-        break;
-         case '-':
-        printf("Sub:%d",num1-num2);
-        break;
-         case '*':
-        printf("mul:%d",num1*num2);
-        break;
-         case '/':
-        printf("Sumb:%d",num1/num2);
-        break;
-        default:
-        printf("Invalid value");
-    }
+    //pallindrome
+    int num,rem,sum=0,original;
+  printf("Enter the num:");
+  scanf("%d",&num);
+  original=sum;
+  while(num!=0){
+    rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+  }
+if(original==num){
+    printf("Yes");
+}else{
+    printf("NO");
+}
 }
