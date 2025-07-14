@@ -1,20 +1,31 @@
 #include<stdio.h>
 
-void swap(int *a,int *b){
-    int temp;
-    if(*a>*b){
-        temp=*a;
-       *a=*b;
-       *b=temp;
-      
-    }
-     printf("%d",*a);
-       printf("%d",*b);
-}
 int main(){
-  int n1,n2;
-  printf("Enter the values:");
-  scanf("%d %d",&n1,&n2);
- swap(&n1,&n2);
- 
+  int n,arr[10],temp;
+  printf("Enter the values n:");
+  scanf("%d",&n);
+  for(int i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+  }
+  printf("Array is:");
+  for(int i=0;i<n;i++){
+    printf("%d ",arr[i]);
+  }
+  //selection sort
+  for(int i=0;i<n-1;i++){
+    int min=i;
+    for(int j=i;j<n;j++){
+        if(arr[j]<arr[min]){
+            min=j;
+        }
+    }
+    //swapping
+    temp=arr[i];
+    arr[i]=arr[min];
+    arr[min]=temp;
+  }
+  printf("Sorted:");
+  for(int i=0;i<n;i++){
+    printf("%d ",arr[i]);
+  }
 }
