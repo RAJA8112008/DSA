@@ -1,18 +1,20 @@
 #include<stdio.h>
-#include<stdlib.h>
+
+
+void swap(int *a,int *b){
+ int temp;
+ if(*a>*b){
+    temp=*a;
+    *a=*b;
+    *b=temp;
+ }
+}
 int main(){
-    int n,sum=0;
-    printf("Enter the value :");
-    scanf("%d",&n);
-    int *ptr=(int*)malloc(n*sizeof(int));
-    if(ptr==NULL){
-        printf("Memmory not assign");
-        return 1;
-    }
-    for(int i=0;i<n;i++){
-        scanf("%d",&ptr[i]);
-        sum+=ptr[i];
-    }
-     printf("Printing sum:%d",sum);
-    free(ptr);
+  //call by reference
+  int x,y;
+  printf("Enter the nums:");
+  scanf("%d",&x);
+   scanf("%d",&y);
+   swap(&x,&y);
+   printf("%d %d",x,y);
 }
