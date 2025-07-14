@@ -1,31 +1,27 @@
 #include<stdio.h>
-
-int main(){
-  int n,arr[10],temp;
-  printf("Enter the values n:");
-  scanf("%d",&n);
-  for(int i=0;i<n;i++){
-    scanf("%d",&arr[i]);
+void main(){
+    float num1,num2;
+  char op;
+  printf("Enter the num1:");
+  scanf("%f",&num1);
+  printf("Enter the op:");
+  scanf(" %c",&op);
+  printf("Enter the num2:");
+  scanf("%f",&num2);
+  switch(op){
+    case '+':
+    printf("a+B:%.2f",num1+num2);
+    break;
+    case '-':
+    printf("a-B:%.2f",num1-num2);
+    break;
+    case '*':
+    printf("a*B:%.2f",num1*num2);
+    break;
+    case '/':
+    printf("a/B:%.2f",num1/num2);
+    break;
+    default:
+    printf("Iv");
   }
-  printf("Array is:");
-  for(int i=0;i<n;i++){
-    printf("%d ",arr[i]);
   }
-  //selection sort
-  for(int i=0;i<n-1;i++){
-    int min=i;
-    for(int j=i;j<n;j++){
-        if(arr[j]<arr[min]){
-            min=j;
-        }
-    }
-    //swapping
-    temp=arr[i];
-    arr[i]=arr[min];
-    arr[min]=temp;
-  }
-  printf("Sorted:");
-  for(int i=0;i<n;i++){
-    printf("%d ",arr[i]);
-  }
-}
