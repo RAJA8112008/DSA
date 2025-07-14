@@ -1,17 +1,19 @@
 #include<stdio.h>
-
-void main(){
-    int num,count=0;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    for(int i=1;i<=num;i++){
-        if(num%i==0){
-            count++;
-        }
+int fibonaci(int n){
+    if(n==0){
+        return 0;
     }
-    if(count==2){
-        printf("YES");
-    }else{
-        printf("NO");
+    if(n==1){
+        return 1;
+    }
+    return fibonaci(n-1)+fibonaci(n-2);
+}
+
+int main(){
+    int n;
+    printf("Enter the n:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+    printf("%d",fibonaci(i));
     }
 }
