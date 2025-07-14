@@ -1,19 +1,17 @@
 #include<stdio.h>
-int fibonaci(int n){
-    if(n==0){
-        return 0;
+int gcd(int a,int b){
+    if(b==0){
+        return a;
     }
-    if(n==1){
-        return 1;
-    }
-    return fibonaci(n-1)+fibonaci(n-2);
+    
+    return gcd(b,a%b);
 }
 
 int main(){
-    int n;
+    int a,b;
     printf("Enter the n:");
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-    printf("%d",fibonaci(i));
-    }
+    scanf("%d %d",&a,&b);
+    
+    printf("%d",gcd(a,b));
+   
 }
