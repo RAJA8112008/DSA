@@ -1,17 +1,20 @@
 #include<stdio.h>
-int fact(int n){
-    if(n==0){
+void main(){
+    int n,arr[n];
+    printf("Enter the value :");
+    scanf("%d",&n);
+    int *ptr=(int*)malloc(n*sizeof(int));
+    if(ptr==NULL){
+        printf("Memmory not assign");
         return 1;
     }
-    if(n==1){
-        return 1;
+    for(int i=0;i<n;i++){
+        scanf("%d",arr[i]);
     }
-    return n*fact(n-1);
-}
-int main(){
-    int num;
-    printf("Enter the num:");
-    scanf("%d",&num);
-    printf("%d",fact(num));
-    
+    printf("Printing:");
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+    free(ptr);
+
 }
