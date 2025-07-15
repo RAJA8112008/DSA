@@ -20,6 +20,7 @@ void main(){
     break;
     case '/':
     printf("a/B:%.2f",num1/num2);
+    
     break;
     default:
     printf("Iv");
