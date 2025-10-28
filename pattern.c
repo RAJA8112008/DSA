@@ -1,28 +1,25 @@
-#include<stdio.h>
-void main(){
-    float num1,num2;
-  char op;
-  printf("Enter the num1:");
-  scanf("%f",&num1);
-  printf("Enter the op:");
-  scanf(" %c",&op);
-  printf("Enter the num2:");
-  scanf("%f",&num2);
-  switch(op){
-    case '+':
-    printf("a+B:%.2f",num1+num2);
-    break;
-    case '-':
-    printf("a-B:%.2f",num1-num2);
-    break;
-    case '*':
-    printf("a*B:%.2f",num1*num2);
-    break;
-    case '/':
-    printf("a/B:%.2f",num1/num2);
-    
-    break;
-    default:
-    printf("Iv");
-  }
-  }
+#include<iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the Array size: " << endl;
+    cin >> n;
+
+    int arr[n];  // declare array of size n
+
+    // Taking data from user
+    cout << "Enter " << n << " elements:" << endl;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    // Displaying array elements
+    cout << "You entered: " << endl;
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
