@@ -13,7 +13,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
     // Displaying array elements
     cout << "You entered: " << endl;
     for (int i = 0; i < n; i++) {
