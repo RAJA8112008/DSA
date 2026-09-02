@@ -2,6 +2,8 @@
 
 Interview DSA solutions for [RAJA8112008](https://github.com/RAJA8112008).
 
+College / practice files stay in `Bacis/`, `Easy/`, and `pattern.c`. The numbered folders below are the interview set.
+
 Every problem folder has:
 
 1. **README** — the problem, companies, LeetCode / GFG links, and the three methods
