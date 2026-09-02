@@ -1,0 +1,62 @@
+// Method 1: Brute
+// Time: O(n) | Space: O(1)
+// One left-to-right pass. First time you see target, store i. Every time you see it, update last. Missing target leaves both at -1.
+
+class Solution {
+  public int[] searchRange(int[] nums, int target) {
+    int first = -1, last = -1;
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == target) {
+        if (first < 0) first = i;
+        last = i;
+      }
+    }
+    return new int[]{first, last};
+  }
+}
+
+
+// Method 2: Optimal
+// Time: O(log n) | Space: O(1)
+// Two binary searches. When mid equals target, first-occurrence keeps searching left (hi = mid - 1) and last-occurrence keeps searching right (lo = mid + 1). Each is O(log n).
+
+class Solution {
+  int find(int[] nums, int target, boolean first) {
+    int lo = 0, hi = nums.length - 1, ans = -1;
+    while (lo <= hi) {
+      int mid = (lo + hi) >> 1;
+      if (nums[mid] == target) {
+        ans = mid;
+        if (first) hi = mid - 1;
+        else lo = mid + 1;
+      } else if (nums[mid] < target) lo = mid + 1;
+      else hi = mid - 1;
+    }
+    return ans;
+  }
+  public int[] searchRange(int[] nums, int target) {
+    return new int[]{find(nums, target, true), find(nums, target, false)};
+  }
+}
+
+
+// Method 3: More optimal
+// Time: O(log n) | Space: O(1)
+// Lower bound (first >= target) and upper bound (first > target). Last index is upper - 1. Overflow-safe mid. One helper, two flags, no extra ans in the loop.
+
+class Solution {
+  int bound(int[] nums, int target, boolean gt) {
+    int lo = 0, hi = nums.length;
+    while (lo < hi) {
+      int mid = lo + ((hi - lo) >> 1);
+      if (nums[mid] < target || (gt && nums[mid] == target)) lo = mid + 1;
+      else hi = mid;
+    }
+    return lo;
+  }
+  public int[] searchRange(int[] nums, int target) {
+    int L = bound(nums, target, false);
+    if (L == nums.length || nums[L] != target) return new int[]{-1, -1};
+    return new int[]{L, bound(nums, target, true) - 1};
+  }
+}

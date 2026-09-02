@@ -1,0 +1,45 @@
+// Method 1: Brute
+// Time: O(n²) | Space: O(1)
+// For each candidate you scan the whole list. n+1 candidates times n looks.
+// How it works: if value x is never found in nums, x is missing.
+
+function missingNumber(nums) {
+  const n = nums.length;
+  for (let x = 0; x <= n; x++) {
+    let found = false;
+    for (let i = 0; i < n; i++) {
+      if (nums[i] === x) { found = true; break; }
+    }
+    if (!found) return x;
+  }
+  return -1;
+}
+
+
+// Method 2: Optimal
+// Time: O(n log n) | Space: O(n)
+// Copy and sort, then a linear gap check. Sorting dominates.
+// How it works: after sort, index i should hold i. The first mismatch is the missing number. If the list is 0..n-1, n is missing.
+
+function missingNumber(nums) {
+  const list = nums.slice().sort(function (a, b) { return a - b; });
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] !== i) return i;
+  }
+  return list.length;
+}
+
+
+// Method 3: More optimal
+// Time: O(n) | Space: O(1)
+// XOR cancels pairs. Indexes 0..n XOR all values leaves the missing one. No overflow the way a large sum might in other languages (JS numbers are fine here too).
+// How it works: start missing = n. XOR i and nums[i] for every i. The leftover is the missing number.
+
+function missingNumber(nums) {
+  const n = nums.length;
+  let missing = n;
+  for (let i = 0; i < n; i++) {
+    missing = missing ^ i ^ nums[i];
+  }
+  return missing;
+}
